@@ -39,8 +39,8 @@ namespace CarLotSimulator
         }
 
         public Car() //created Default Constructor
-        { 
-            
+        {
+            CarLot._numberOfCars++;
         }
         //created filled constructor below to apply to the Program.cs. alternate option other than dot notation. 
         public Car(int year, string make, string model, string engineNoise, string honkNoise, bool isDriveable) 
@@ -51,6 +51,7 @@ namespace CarLotSimulator
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;
             IsDriveable = isDriveable;
+            CarLot._numberOfCars++;
         }
     }
 }

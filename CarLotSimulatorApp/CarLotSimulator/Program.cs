@@ -28,11 +28,14 @@ namespace CarLotSimulator
             var carsOwned = new CarLot();
             var carsWanted = new CarLot();
 
+            Console.WriteLine($"Current number of cars in the car lot: {CarLot._numberOfCars}");
             //instanciated the 3 new cars
             Car myFirstCar = new Car();
+            Console.WriteLine($"Current number of cars in the car lot: {CarLot._numberOfCars}");
             Car mySecondCar = new Car();
+            Console.WriteLine($"Current number of cars in the car lot: {CarLot._numberOfCars}");
             Car myCurrentCar = new Car();
-
+            Console.WriteLine($"Current number of cars in the car lot: {CarLot._numberOfCars}");
             //used dot notationand divided by property
             myFirstCar.Make = "Dodge";
             mySecondCar.Make = "Mitubishi";
@@ -70,7 +73,9 @@ namespace CarLotSimulator
 
             carsOwned.CheckCars();
             carsWanted.CheckCars();
+
             
+
         }
     }
 }

@@ -9,6 +9,8 @@ namespace CarLotSimulator
     public class CarLot
     {//Created new CarLot.cs. made it as a list of cars from our Car.cs.
      //Made it equal to new list of car as default.
+
+        public static int _numberOfCars = 0;
         public List<Car> ParkingLot {  get; set; } = new List<Car>();
 
         //created a method CheckCars.
@@ -27,5 +29,7 @@ namespace CarLotSimulator
                 Console.WriteLine();
             }
         }
+        
+
     }
 }
